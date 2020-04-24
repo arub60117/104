@@ -1,0 +1,34 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable id="X-l1eT8Oxxwa_-J+h~+b">mySprite</variable><variable type="KIND_SpriteKind" id="}!n$@_.##0L}Q#GEJc6C">Player</variable><variable type="KIND_SpriteKind" id="A(6Iklq/@RqlEKeln^[5">Projectile</variable><variable type="KIND_SpriteKind" id="{jxyr/%:BtWXfu#q_7N8">Food</variable><variable type="KIND_SpriteKind" id="9^+`d3~j,,6vnPs^OD%*">Enemy</variable></variables><block type="pxt-on-start" x="0" y="0"><statement name="HANDLER"><block type="variables_set"><field name="VAR" id="X-l1eT8Oxxwa_-J+h~+b">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . f f 4 4 f f . . . . . . . . . . . . . 
+. . . . . . . . . . . . f 5 4 5 5 4 5 f . . . . . . . . . . . . 
+. . . . . . . . . . . f e 4 5 5 5 5 4 e f . . . . . . . . . . . 
+. . . . . . . . . . f b 3 e 4 4 4 4 e 3 b f . . . . . . . . . . 
+. . . . . . . . . . f 3 3 3 3 3 3 3 3 3 3 f . . . . . . . . . . 
+. . . . . . . . . f 3 3 e b 3 e e 3 b e 3 3 f . . . . . . . . . 
+. . . . . . . . . f 3 3 f f e e e e f f 3 3 f . . . . . . . . . 
+. . . . . . . . . f b b f b f e e f b f b b f . . . . . . . . . 
+. . . . . . . . . f b b e 1 f d d f 1 e b b f . . . . . . . . . 
+. . . . . . . . f f b b f d d d d d d f b b f f . . . . . . . . 
+. . . . . . . . f b b f f f e e e e f f f b b f . . . . . . . . 
+. . . . . . . . . f e e f b d d d d b f e e f . . . . . . . . . 
+. . . . . . . . . . e d c d d d d d d c d e . . . . . . . . . . 
+. . . . . . . . . . e f b d b d b d b b f e . . . . . . . . . . 
+. . . . . . . . . . . f f 9 4 9 4 9 4 f f . . . . . . . . . . . 
+. . . . . . . . . . . . . f f b b f f . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 
+`</field></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetvel"><value name="sprite"><block type="variables_get"><field name="VAR" id="X-l1eT8Oxxwa_-J+h~+b">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker"><field name="speed">50</field></shadow></value><next><block type="spritesetsetflag"><field name="flag">SpriteFlag.BounceOnWall</field><value name="sprite"><block type="variables_get"><field name="VAR" id="X-l1eT8Oxxwa_-J+h~+b">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff"><field name="on">true</field></shadow></value></block></next></block></next></block></statement></block><block type="keyonevent" x="50" y="330"><field name="button">controller.A</field><field name="event">ControllerButtonEvent.Pressed</field><statement name="HANDLER"><block type="gamesetbackgroundcolor"><value name="color"><shadow type="colorindexpicker"><field name="index">7</field></shadow></value><next><block type="spritesay"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="sprite"><block type="variables_get"><field name="VAR" id="X-l1eT8Oxxwa_-J+h~+b">mySprite</field></block></value><value name="text"><shadow type="text"><field name="TEXT">生日快樂</field></shadow></value><value name="millis"><shadow type="timePicker"><field name="ms">500</field></shadow></value><next><block type="mixer_play_note"><value name="note"><shadow type="device_note"><field name="note">440</field></shadow></value><value name="duration"><shadow type="device_beat"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="mixer_play_note"><value name="note"><shadow type="device_note"><field name="note">494</field></shadow></value><value name="duration"><shadow type="device_beat"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="mixer_play_note"><value name="note"><shadow type="device_note"><field name="note">523</field></shadow></value><value name="duration"><shadow type="device_beat"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="mixer_play_note"><value name="note"><shadow type="device_note"><field name="note">494</field></shadow></value><value name="duration"><shadow type="device_beat"><field name="fraction">BeatFraction.Whole</field></shadow></value><next><block type="mixer_play_note"><value name="note"><shadow type="device_note"><field name="note">523</field></shadow></value><value name="duration"><shadow type="device_beat"><field name="fraction">BeatFraction.Double</field></shadow></value><next><block type="mixer_play_note"><value name="note"><shadow type="device_note"><field name="note">659</field></shadow></value><value name="duration"><shadow type="device_beat"><field name="fraction">BeatFraction.Half</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block></xml>
