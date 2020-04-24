@@ -1,4 +1,44 @@
+controller.B.onEvent(ControllerButtonEvent.Pressed, function () {
+    scene.setBackgroundColor(7)
+    mySprite.say("嘻嘻嘻")
+    mySprite.setImage(img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . c c c c . . . . 
+. . . . . . c c d d d d c . . . 
+. . . . . c c c c c c d c . . . 
+. . . . c c 4 4 4 4 d c c . . . 
+. . . c 4 d 4 4 4 4 4 1 c . c c 
+. . c 4 4 4 1 4 4 4 4 d 1 c 4 c 
+. c 4 4 4 4 1 4 4 4 4 4 1 c 4 c 
+f 4 4 4 4 4 1 4 4 4 4 4 1 4 4 f 
+f 4 4 4 f 4 1 c c 4 4 4 1 f 4 f 
+f 4 4 4 4 4 1 4 4 f 4 4 d f 4 f 
+. f 4 4 4 4 1 c 4 f 4 d f f f f 
+. . f f 4 d 4 4 f f 4 c f c . . 
+. . . . f f 4 4 4 4 c d b c . . 
+. . . . . . f f f f d d d c . . 
+. . . . . . . . . . c c c . . . 
+`)
+})
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    mySprite.setImage(img`
+. . . . . f f 4 4 f f . . . . . 
+. . . . f 5 4 5 5 4 5 f . . . . 
+. . . f e 3 3 3 3 3 3 e f . . . 
+. . f b 3 3 3 3 3 3 3 3 b f . . 
+. . f 3 3 3 3 3 3 3 3 3 3 f . . 
+. f 3 3 3 3 3 3 3 3 3 3 3 3 f . 
+. f b 3 3 3 3 3 3 3 3 3 3 b f . 
+. f b b 3 3 3 3 3 3 3 3 b b f . 
+. f b b b b b b b b b b b b f . 
+f c b b b b b b b b b b b b c f 
+f b b b b b b b b b b b b b b f 
+. f c c b b b b b b b b c c f . 
+. . e d c f f f f f f c d e . . 
+. . e f b 4 b 4 b 4 b b f e . . 
+. . . f f 1 4 1 4 1 4 f f . . . 
+. . . . . f f b b f f . . . . . 
+`)
     scene.setBackgroundColor(7)
     mySprite.say("生日快樂")
     music.playTone(440, music.beat(BeatFraction.Whole))
